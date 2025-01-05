@@ -91,8 +91,10 @@ function bb(year:number, month:CalanderMonth, date:number): Birth {
 }
 
 const input = await Deno.readTextFile("./e.txt");
-console.log(input);
-console.log(human("Edward Shin", "2009/11/14", "Developer", PersonRam.EdwardShin));
+
+const a = input.split("\r\n");
+console.log(a);
+console.log(human(a[0], a[1], a[2], PersonRam.EdwardShin));
 
 
 
